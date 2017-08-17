@@ -21,8 +21,6 @@ Events::poll()
 	// reset the trigger events
 	for (auto &v : triggerState)
 		v = false;
-	resize = false;
-	quit = false;
 
 	SDL_Event event;
 	while (SDL_PollEvent(&event)) {

@@ -259,7 +259,7 @@ Phi::render(float dt)
 bool
 Phi::shouldQuit()
 {
-	return curView == nullptr || exitLoop;
+	return curView == nullptr || exitLoop || events.quit;
 }
 
 void
